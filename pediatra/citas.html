@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar citas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h2>Pequeños Pasos</h2>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="doctora.html">Doctora</a>
+        <a href="pacientes.html">Pacientes</a>
+        <a href="citas.html">Citas</a>
+        <a href="consultar.html">Consultar cita</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="contenido">
+    <h1>Agendar una cita médica</h1>
+    <p>Completa los siguientes datos del paciente.</p>
+
+    <form class="formulario" action="#" method="get">
+
+        <label for="paciente">Nombre del paciente:</label>
+        <input type="text" id="paciente" name="paciente"
+               placeholder="Escribe el nombre completo" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"
+               min="0" max="17" required>
+
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora de la cita:</label>
+        <select id="hora" name="hora" required>
+            <option value="">Selecciona una hora</option>
+            <option>09:00 a. m.</option>
+            <option>09:30 a. m.</option>
+            <option>10:00 a. m.</option>
+            <option>10:30 a. m.</option>
+            <option>11:00 a. m.</option>
+            <option>11:30 a. m.</option>
+            <option>12:00 p. m.</option>
+            <option>04:00 p. m.</option>
+            <option>04:30 p. m.</option>
+            <option>05:00 p. m.</option>
+        </select>
+
+        <label for="tutor">Nombre del padre, madre o tutor:</label>
+        <input type="text" id="tutor" name="tutor" required>
+
+        <label for="motivo">Motivo de la consulta:</label>
+        <textarea id="motivo" name="motivo" rows="4"
+                  placeholder="Describe brevemente el motivo"
+                  required></textarea>
+
+        <button type="submit" class="boton">
+            Agendar cita
+        </button>
+
+    </form>
+</section>
+
+</body>
+</html>

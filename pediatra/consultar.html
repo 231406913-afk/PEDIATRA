@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar citas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h2>Pequeños Pasos</h2>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="doctora.html">Doctora</a>
+        <a href="pacientes.html">Pacientes</a>
+        <a href="citas.html">Citas</a>
+        <a href="consultar.html">Consultar citas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="contenido">
+    <h1>Consultar citas médicas</h1>
+
+    <form class="formulario" id="formConsulta">
+
+        <label for="nombre">Nombre del niño o niña:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="tutor">Nombre del padre, madre o tutor:</label>
+        <input type="text" id="tutor" required>
+
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" id="fecha" required>
+
+        <button class="boton" type="submit">Consultar cita</button>
+
+        <p class="mensaje">
+            Si necesitas confirmar los datos de tu cita,
+            comunícate con el consultorio.
+        </p>
+
+    </form>
+</section>
+
+</body>
+</html>

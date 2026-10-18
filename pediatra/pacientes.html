@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h2>Pequeños Pasos</h2>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="doctora.html">Doctora</a>
+        <a href="pacientes.html">Pacientes</a>
+        <a href="citas.html">Citas</a>
+        <a href="consultar.html">Consultar citas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="contenido">
+    <h1>Registro de pacientes</h1>
+
+    <form class="formulario" id="formPaciente">
+        <label for="nombre">Nombre del niño o niña:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" min="0" max="17" required>
+
+        <label for="tutor">Nombre del padre, madre o tutor:</label>
+        <input type="text" id="tutor" required>
+
+        <label for="telefono">Teléfono ficticio:</label>
+        <input type="tel" id="telefono" required>
+
+        <button class="boton" type="submit">Registrar paciente</button>
+        <p class="mensaje" id="mensaje"></p>
+    </form>
+
+    <h2>Pacientes registrados</h2>
+    <div class="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Tutor</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <body id="listaPacientes"></body>
+        </table>
+    </div>
+</section>
+
+</body>
+</html>
